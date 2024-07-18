@@ -23,9 +23,13 @@ export default function Header() {
                         <span className="text-[#0095F6]"><MdVerified /></span>
                     </h1>
 
-                    <button className="text-sm rounded-lg font-bold px-5 py-[5px] bg-[#0095F6]">
+                    <Link
+                        href="./CurriculoJhonatas.pdf"
+                        target="blank"
+                        className="text-sm rounded-lg font-bold px-5 py-[5px] bg-[#0095F6]"
+                    >
                         Baixar CV
-                    </button>
+                    </Link>
                     <button className="text-sm rounded-lg font-semibold px-5 py-[5px] bg-[#363636]">
                         Enviar Mensagem
                     </button>
@@ -36,7 +40,7 @@ export default function Header() {
                     <h2 className="font-bold">Jhonatas Anicezio</h2>
                     <p>Developer FullStack</p>
                     <p>Next.js / MySQL / Node.js / Java / Spring</p>
-                    <p>Meus contato</p>
+                    <p>Meus contatos</p>
                     <p className="text-[#C3F1FF]">
                         <Link className="flex items-center gap-1 font-semibold" target="blank" href={'https://github.com/JhonatasAnicezio'}>
                             <span><RiLinkM /></span>
