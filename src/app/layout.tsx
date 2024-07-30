@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-black`}>
+      <body className={`${inter.className}`}>
         {children}
         <footer className="flex items-center justify-center w-full h-48 mt-11 text-white">
           Footer

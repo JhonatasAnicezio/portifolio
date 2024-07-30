@@ -9,11 +9,14 @@ import {
 } from "@/components/ui/dialog"
 
 import { projects } from "@/app/fakeData/navData";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Description from "../components/description";
+import { ThemeModeContext } from "@/context/ThemeMode";
 
 export default function Projects() {
+  const { isDark } = useContext(ThemeModeContext);
+
   const [curr, setCurr] = useState<number[]>(projects.map((_, index) => index))
 
   const prev = (index: number) =>
@@ -44,10 +47,10 @@ export default function Projects() {
             </div>
           </DialogTrigger>
 
-          <DialogContent className="w-[1413px] flex bg-black">
+          <DialogContent  className={`w-[1413px] flex ${isDark? "bg-black" : "bg-white"}`}>
 
             <div className={`w-[913px] h-[913px] relative bg-[#2525257]`}>
-              <Carousel slides={projects[curr[index]].images} />
+              <Carousel slides={projects[curr[index]].images} key={index} />
             </div>
 
             <Description />

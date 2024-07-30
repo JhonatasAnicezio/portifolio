@@ -10,10 +10,12 @@ import Image from "next/image";
 
 import { hitory } from "@/app/fakeData/navData";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Description from "../components/description";
+import { ThemeModeContext } from "@/context/ThemeMode";
 
 export default function History() {
+  const { isDark } = useContext(ThemeModeContext);
   const [curr, setCurr] = useState<number[]>(hitory.map((_, index) => index))
 
   const prev = (index: number) =>
@@ -44,9 +46,9 @@ export default function History() {
             </div>
           </DialogTrigger>
 
-          <DialogContent className="w-[1413px] flex bg-white">
+          <DialogContent className={`w-[1413px] flex ${isDark? "bg-black" : "bg-white"}`}>
             <div className={`w-[913px] h-[913px] relative bg-[#2525257]`}>
-              <Carousel slides={hitory[curr[index]].images} />
+              <Carousel slides={hitory[curr[index]].images} key={index} />
             </div>
 
             <Description />

@@ -3,8 +3,11 @@ import Link from "next/link";
 import mitsk from "../../../../../public/3d40e2ddc5683a93f7987f9a4f5b77f7.jpg";
 import { RiLinkM } from "react-icons/ri";
 import { MdVerified } from "react-icons/md";
+import { useContext } from "react";
+import { ThemeModeContext } from "@/context/ThemeMode";
 
 export default function Header() {
+    const { isDark } = useContext(ThemeModeContext);
     return (
         <header className="flex px-[35px] py-[35px]">
 
@@ -26,11 +29,11 @@ export default function Header() {
                     <Link
                         href="./CurriculoJhonatas.pdf"
                         target="blank"
-                        className="text-sm rounded-lg font-bold px-5 py-[5px] bg-[#0095F6]"
+                        className="text-sm rounded-lg font-bold px-5 py-[5px] text-white bg-[#0095F6]"
                     >
                         Baixar CV
                     </Link>
-                    <button className="text-sm rounded-lg font-semibold px-5 py-[5px] bg-[#363636]">
+                    <button className={`text-sm rounded-lg font-semibold px-5 py-[5px] ${isDark? "bg-[#363636]" : "bg-[#EFEFEF]"}`}>
                         Enviar Mensagem
                     </button>
                 </div>
@@ -41,13 +44,13 @@ export default function Header() {
                     <p>Developer FullStack</p>
                     <p>Next.js / MySQL / Node.js / Java / Spring</p>
                     <p>Meus contatos</p>
-                    <p className="text-[#C3F1FF]">
+                    <p className={`${isDark? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
                         <Link className="flex items-center gap-1 font-semibold" target="blank" href={'https://github.com/JhonatasAnicezio'}>
                             <span><RiLinkM /></span>
                             github.com/JhonatasAnicezio
                         </Link>
                     </p>
-                    <p className="text-[#C3F1FF]">
+                    <p className={`${isDark? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
                         <Link className="flex items-center gap-1 font-semibold" target="blank" href={'https://www.linkedin.com/in/jhonatas-anicezio/'}>
                             <span><RiLinkM /></span>
                             linkedin.com/jhonatas-anicezio

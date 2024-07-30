@@ -1,6 +1,8 @@
 'use client'
+import { ThemeModeContext } from "@/context/ThemeMode";
 import Link from "next/link";
 import { usePathname } from 'next/navigation'
+import { useContext } from "react";
 
 interface NavProps {
   href: string;
@@ -15,6 +17,8 @@ interface NavComponentProps {
 const path = '/jhonatas';
 
 export default function Nav({ pages }: NavComponentProps) {
+    const { isDark } = useContext(ThemeModeContext);
+
     const pathname = usePathname();
 
     return (
@@ -23,7 +27,10 @@ export default function Nav({ pages }: NavComponentProps) {
                 <Link
                     href={`${path + href}`}
                     key={index}
-                    className={`flex items-center gap-1 py-4 ${pathname === (path + href) && 'border-t border-white'}`}
+                    className={`flex items-center gap-1 py-4
+                        ${pathname === (path + href) && `border-t
+                            ${isDark? "border-white" : "border-black"}`}
+                    `}
                 >
                     {icon}
                     {name}
