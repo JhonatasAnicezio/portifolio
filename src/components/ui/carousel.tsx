@@ -46,6 +46,7 @@ export default function Carousel({ slides }: CarouselProps) {
                 <div className="flex items-center justify-center gap-1">
                     {slides.map((_, i) => (
                         <div
+                            key={i}
                             className={`
                                 w-[6px] h-[6px] bg-white rounded-full
                                 ${curr !== i && 'bg-opacity-40'}
