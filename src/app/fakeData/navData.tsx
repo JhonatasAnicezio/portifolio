@@ -28,20 +28,25 @@ export const pages = [
 export const projects = [
     {
         images: [album, album1, album2, album3],
+        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
     },
     {
         images: [album1, album2, album3],
+        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
     },
     {
         images: [album2],
+        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
     },
 ]
 
 export const hitory = [
     {
         images: [album3],
+        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
     },
     {
         images: [album2],
+        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
     },
 ]
