@@ -8,6 +8,8 @@ import g2 from '../../../public/g2.webp';
 import g3 from '../../../public/g3.webp';
 import g4 from '../../../public/g4.webp';
 
+import capaTableRise from '../../../public/255737992-387aca69-151e-4c18-868e-b9f5e77e1f1d.png';
+
 export const pages = [
     {
         href: '',
@@ -27,6 +29,22 @@ export const pages = [
 ]
 
 export const projects = [
+    {
+        images: [capaTableRise],
+        description: {
+            title: 'TableRise 🧙‍♂️',
+            links: [
+                {
+                    href: 'https://github.com/TableRise',
+                    alt: '@github/TableRise'
+                },
+            ],
+            details: [
+                'TableRise é um projeto criado com a finalidade de ajudar profissionais juniors que ainda não tiveram sua primeira oportunidade a adquirir experiência com um projeto que têm processos e metódos condizentes com o mercado de trabalho e foi idealizado pensando em jogadores apaixonados por RPG, que desejam uma partida dinâmica e divertida, esse é o objetivo principal do projeto, fornecer ferramentas úteis e fáceis de usar para uma campanha de RPG, já existem outros projetos neste sentido, porem o TableRise é pensado para ser uma plataforma super intuitiva e muito aconchegante para campanhas simples ou até mais elaboradas e mais complexas, se seu objetivo é ter uma experiência incrível com seus amigos jogando RPG, TableRise é com certeza o lugar ideal.',
+            ],
+            stacks: ['Next.js', 'Typescript', 'Express', 'Node.js', 'MongoDB']
+        }
+    },
     {
         images: [capaGrolet, g1, g2, g3, g4],
         description: {
@@ -48,7 +66,7 @@ export const projects = [
             ],
             stacks: ['Next.js', 'Typescript', 'Express', 'Node.js', 'MySQL']
         }
-    },
+    }
 ];
 
 export const hitory = [];
