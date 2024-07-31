@@ -17,11 +17,11 @@ export default function Carousel({ slides }: CarouselProps) {
         setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
 
     return (
-        <div className="overflow-hidden">
-            <div className="flex" style={{ transform: `translateX(-${curr*100}%)` }}>
+        <div className="overflow-hidden w-full h-full">
+            <div className="flex w-full h-full" style={{ transform: `translateX(-${curr*100}%)` }}>
                 {slides.map((slide, i) => (
-                    <div key={i} className="w-full flex-shrink-0">
-                        <Image src={slide} alt="album" quality={100} layout="responsive" objectFit="cover" />
+                    <div key={i} className="w-full h-full flex-shrink-0 relative">
+                        <Image src={slide} alt="album" quality={100} fill style={{ objectFit: "cover" }}/>
                     </div>
                 ))}
             </div>
