@@ -22,7 +22,7 @@ export default function Header() {
                 {/* header info profile */}
                 <div className="flex gap-2 items-center">
                     <h1 className="flex items-center justify-center text-lg gap-1 pr-4">
-                        cedricgrolet 
+                        Jhonatas 
                         <span className="text-[#0095F6]"><MdVerified /></span>
                     </h1>
 
@@ -33,15 +33,15 @@ export default function Header() {
                     >
                         Baixar CV
                     </Link>
-                    <button className={`text-sm rounded-lg font-semibold px-5 py-[5px] ${isDark? "bg-[#363636]" : "bg-[#EFEFEF]"}`}>
+                    {/* <button className={`text-sm rounded-lg font-semibold px-5 py-[5px] ${isDark? "bg-[#363636]" : "bg-[#EFEFEF]"}`}>
                         Enviar Mensagem
-                    </button>
+                    </button> */}
                 </div>
 
                 {/* info profile tag and info */}
                 <div className="flex flex-col text-sm">
                     <h2 className="font-bold">Jhonatas Anicezio</h2>
-                    <p>Developer FullStack</p>
+                    <p>Desenvolvedor FullStack 👨‍💻</p>
                     <p>Next.js / MySQL / Node.js / Java / Spring</p>
                     <p>Meus contatos</p>
                     <p className={`${isDark? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
