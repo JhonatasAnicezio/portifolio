@@ -1,16 +1,27 @@
 import Image from "next/image";
 import profile from '../../../../../public/3d40e2ddc5683a93f7987f9a4f5b77f7.jpg';
 import { MdVerified } from "react-icons/md";
+import { FaRegHeart, FaRegBookmark } from "react-icons/fa6";
 import { useContext } from "react";
 import { ThemeModeContext } from "@/context/ThemeMode";
 import Link from "next/link";
 
 interface DescriptionProps {
-    description: string;
+    description: {
+        title: string;
+        links: {
+            href: string;
+            alt: string;
+        }[];
+        details: string[];
+        stacks: string[];
+    };
 }
 
 export default function Description({ description }: DescriptionProps) {
     const { isDark } = useContext(ThemeModeContext);
+
+    const { title, links, details, stacks } = description;
 
     return (
         <div className={`flex flex-col w-[500px] rounded-tr-sm rounded-br-sm relative ${isDark ? "text-white" : "text-black"}`}>
@@ -28,30 +39,34 @@ export default function Description({ description }: DescriptionProps) {
             </div>
 
             <section className="flex">
-                <div className="flex items-center py-[14px] pl-16 pr-4 gap-[14px]">
+                <div className="flex items-center py-[14px] pl-16 pr-8 gap-[14px]">
                     <div className="flex flex-col items-start text-sm gap-4">
-                        <h1>What is Lorem Ipsum?</h1>
+                        <h1 className="text-2xl font-bold">{title}</h1>
 
-                        <div className={`flex flex-col gap-1 ${isDark? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
-                            <Link href={'https://github.com/JhonatasAnicezio/Grolet_Patisserie'}>@github/grolet_patisserie</Link>
-                            <Link href={'https://grolet-patisserie.vercel.app/'}>@deploy/grolet_patisserie</Link>
+                        <div className={`flex flex-col gap-1 ${isDark ? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
+                            {links.map(({ href, alt }) => <Link href={href} target="blank">{alt}</Link>)}
                         </div>
-                        
+
                         <p>
-                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                            {details.map((detail, i) => 
+                            <>
+                                {i != 0 && <><br/><br/></>}
+                                {detail}
+                            </>)}
                         </p>
 
 
 
-                        <p className={`${isDark? "text-[#e0f1ff]" : "text-[#00376b]"}`}>
-                            #Next.js#typescript#Express#Node#MySQL
+                        <p className={`${isDark ? "text-[#e0f1ff]" : "text-[#00376b]"}`}>
+                            #{stacks.join('#')}
                         </p>
                     </div>
                 </div>
             </section>
 
-            <footer className={`absolute bottom-0 w-full h-12 border-t  ${isDark ? "border-[#262626]" : "border-[#dbdbdb]"}`}>
-
+            <footer className={`flex items-center justify-between px-4 text-2xl absolute bottom-0 w-full h-12 border-t  ${isDark ? "border-[#262626]" : "border-[#dbdbdb]"}`}>
+                <FaRegHeart />
+                <FaRegBookmark />
             </footer>
         </div>
     )
