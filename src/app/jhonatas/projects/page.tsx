@@ -53,7 +53,7 @@ export default function Projects() {
               <Carousel slides={projects[curr[index]].images} key={index} />
             </div>
 
-            <Description />
+            <Description description={projects[curr[index]].description} />
 
 
             <button

@@ -51,7 +51,7 @@ export default function History() {
               <Carousel slides={hitory[curr[index]].images} key={index} />
             </div>
 
-            <Description />
+            <Description description={hitory[curr[index]].description} />
 
             <button
               onClick={() => next(index)}
