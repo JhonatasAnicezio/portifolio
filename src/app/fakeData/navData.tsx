@@ -2,51 +2,53 @@ import { LiaTableSolid } from "react-icons/lia";
 import { LuHistory } from "react-icons/lu";
 import { MdOutlinePersonPin } from "react-icons/md";
 
-import album from '../../../public/0060253715653_600.jpg';
-import album1 from '../../../public/16-Kendrick-Lamar-album.jpg';
-import album2 from '../../../public/1_kendrick_lamar_novo_album-7960773.jpg';
-import album3 from '../../../public/71tdaojeUkL._UF1000,1000_QL80_.jpg';
+import capaGrolet from '../../../public/groletcapa.webp';
+import g1 from '../../../public/g1.webp';
+import g2 from '../../../public/g2.webp';
+import g3 from '../../../public/g3.webp';
+import g4 from '../../../public/g4.webp';
 
 export const pages = [
-  {
-      href: '',
-      name: 'ABOUT',
-      icon: <MdOutlinePersonPin />,
-  },
-  {
-      href: '/projects',
-      name: 'PROJETOS',
-      icon: <LiaTableSolid />,
-  },
-  {
-      href: '/history',
-      name: 'HISTORIA',
-      icon: <LuHistory />,
-  },
+    {
+        href: '',
+        name: 'ABOUT',
+        icon: <MdOutlinePersonPin />,
+    },
+    {
+        href: '/projects',
+        name: 'PROJETOS',
+        icon: <LiaTableSolid />,
+    },
+    {
+        href: '/history',
+        name: 'HISTORIA',
+        icon: <LuHistory />,
+    },
 ]
 
 export const projects = [
     {
-        images: [album, album1, album2, album3],
-        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
+        images: [capaGrolet, g1, g2, g3, g4],
+        description: {
+            title: 'Grolet Patisserie 👨‍🍳',
+            links: [
+                {
+                    href: 'https://github.com/JhonatasAnicezio/Grolet_Patisserie',
+                    alt: '@github/grolet_patisserie'
+                },
+                {
+                    href: 'https://grolet-patisserie.vercel.app/',
+                    alt: '@deploy/grolet_patisserie'
+                },
+            ],
+            details: [
+                'O projeto do site da Grolet Patisserie tem como principais destaques o hub de receitas, onde os visitantes podem explorar e se inspirar com uma variedade de deliciosas receitas exclusivas da patisserie. Além disso, o site oferece um cadastro de clientes, permitindo que os visitantes se inscrevam para receber atualizações, promoções e novidades da Grolet.',
+                'O site também conta com diversas formas de contato, como um formulário de contato, e-mail e telefone, facilitando a comunicação dos clientes com a patisserie. Isso permite que os visitantes solicitem encomendas personalizadas, tirem dúvidas ou compartilhem feedbacks.',
+                'Em resumo, o projeto do site institucional da Grolet Patisserie proporciona uma experiência online completa, apresentando um hub de receitas para inspirar os visitantes, um cadastro de clientes para manter um relacionamento próximo e diversas opções de contato para uma comunicação eficiente. Tudo isso visando transmitir a excelência e a paixão da Grolet Patisserie em cada interação com seus clientes.'
+            ],
+            stacks: ['Next.js', 'Typescript', 'Express', 'Node.js', 'MySQL']
+        }
     },
-    {
-        images: [album1, album2, album3],
-        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
-    },
-    {
-        images: [album2],
-        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
-    },
-]
+];
 
-export const hitory = [
-    {
-        images: [album3],
-        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
-    },
-    {
-        images: [album2],
-        description: 'Purée, je dis: Félicitations à Cédric et à toute l’équipe pour ce travail. La façon dont vous montrez le contenu de façon simple pour plaire aux fans de « scroll down » est vraiment bien faite. Chapeau et continuez comme ceci 🌸💐'
-    },
-]
+export const hitory = [];
