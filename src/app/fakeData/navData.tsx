@@ -9,6 +9,7 @@ import g3 from '../../../public/g3.webp';
 import g4 from '../../../public/g4.webp';
 
 import capaTableRise from '../../../public/255737992-387aca69-151e-4c18-868e-b9f5e77e1f1d.png';
+import { StaticImageData } from "next/image";
 
 export const pages = [
     {
@@ -69,4 +70,15 @@ export const projects = [
     }
 ];
 
-export const hitory = [];
+export const hitory: {
+    images: StaticImageData[];
+    description: {
+        title: string;
+        links: {
+            href: string;
+            alt: string;
+        }[];
+        details: string[];
+        stacks: string[];
+    };
+}[] = [];
