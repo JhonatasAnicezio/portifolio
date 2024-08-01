@@ -44,7 +44,7 @@ export default function Description({ description }: DescriptionProps) {
                         <h1 className="text-2xl font-bold">{title}</h1>
 
                         <div className={`flex flex-col gap-1 ${isDark ? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
-                            {links.map(({ href, alt }) => <Link href={href} target="blank">{alt}</Link>)}
+                            {links.map(({ href, alt }, i) => <Link href={href} key={i} target="blank">{alt}</Link>)}
                         </div>
 
                         <p>
