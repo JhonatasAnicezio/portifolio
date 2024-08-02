@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profile from '../../../../../public/3d40e2ddc5683a93f7987f9a4f5b77f7.jpg';
+import profile from '../../../../public/3d40e2ddc5683a93f7987f9a4f5b77f7.jpg';
 import { MdVerified } from "react-icons/md";
 import { FaRegHeart, FaRegBookmark } from "react-icons/fa6";
 import { useContext } from "react";

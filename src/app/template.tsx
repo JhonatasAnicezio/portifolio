@@ -1,11 +1,12 @@
+'use client'
 import Darkmode from "@/components/ui/darkmode";
 import { ThemeModeContext } from "@/context/ThemeMode";
 import { useContext } from "react";
-import Header from "../header";
-import Nav from "../Nav";
-import { pages } from "@/app/fakeData/navData";
+import Header from "./components/header";
+import Nav from "./components/Nav";
+import { pages } from "@/fakeData/navData";
 
-export default function PageLayout({
+export default function Template({
     children,
 }: Readonly<{
     children: React.ReactNode;

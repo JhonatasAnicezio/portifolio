@@ -1,19 +1,21 @@
 import Image from "next/image";
 import Link from "next/link";
-import mitsk from "../../../../../public/3d40e2ddc5683a93f7987f9a4f5b77f7.jpg";
+import profile from "../../../../public/3d40e2ddc5683a93f7987f9a4f5b77f7.jpg";
 import { RiLinkM } from "react-icons/ri";
 import { MdVerified } from "react-icons/md";
 import { useContext } from "react";
 import { ThemeModeContext } from "@/context/ThemeMode";
 
 export default function Header() {
+
     const { isDark } = useContext(ThemeModeContext);
+
     return (
         <header className="flex px-[35px] py-[35px]">
 
             {/* image profile */}
             <div className="flex items-center justify-center px-10">
-                <Image className="rounded-full" width={150} height={150} src={mitsk} alt="bla" />
+                <Image className="rounded-full" width={150} height={150} src={profile} alt="bla" />
             </div>
 
             {/* info profile */}
