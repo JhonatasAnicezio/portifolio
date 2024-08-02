@@ -1,5 +1,5 @@
 'use client'
-import { ReactNode, createContext, useState } from 'react';
+import { ReactNode, createContext, useEffect, useState } from 'react';
 
 interface ThemeModeContext {
     isDark: boolean,
@@ -15,8 +15,19 @@ type Prop = {
 export function ThemeModeProvider({ children }: Prop) {
   const [isDark, setIsDark] = useState<boolean>(true);
 
+  useEffect(() => {
+
+    const theme = localStorage.getItem('themeSystem');
+
+    if(theme) {
+      setIsDark(JSON.parse(theme));
+    }
+  }, [])
+
   const setTheme = () => {
     setIsDark(!isDark);
+    
+    localStorage.setItem('themeSystem', JSON.stringify(!isDark));
   }
 
   const context = {
