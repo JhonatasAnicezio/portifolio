@@ -55,10 +55,14 @@ export default function Description({ description }: DescriptionProps) {
                             </>)}
                         </p>
 
+                        <p className={`flex flex-col gap-1`}>
+                            <span className={`${isDark ? "text-[#e0f1ff]" : "text-[#00376b]"}`}>
+                                #{stacks.join('#')}
+                            </span>
 
-
-                        <p className={`${isDark ? "text-[#e0f1ff]" : "text-[#00376b]"}`}>
-                            #{stacks.join('#')}
+                        <div className={`"flex justify-start text-xs w-full`}>
+                            <p className={isDark? 'text-white/50': 'text-black/50'}>out de 2023 - o momento · 11 meses</p>
+                        </div>
                         </p>
                     </div>
                 </div>

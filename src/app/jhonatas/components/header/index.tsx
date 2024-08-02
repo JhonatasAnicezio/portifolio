@@ -42,8 +42,11 @@ export default function Header() {
                 <div className="flex flex-col text-sm">
                     <h2 className="font-bold">Jhonatas Anicezio</h2>
                     <p>Desenvolvedor FullStack 👨‍💻</p>
-                    <p>Next.js / MySQL / Node.js / Java / Spring</p>
-                    <p>Meus contatos</p>
+                    <p>Engenharia de Software 1 / 8 🎓</p>
+                    
+                    <p className="pt-2">Next.js / MySQL / Node.js / Java / Spring</p>
+                    
+                    <p className="pt-2">Meus contatos</p>
                     <p className={`${isDark? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
                         <Link className="flex items-center gap-1 font-semibold" target="blank" href={'https://github.com/JhonatasAnicezio'}>
                             <span><RiLinkM /></span>

@@ -10,6 +10,8 @@ import Image from "next/image";
 
 import { hitory } from "@/app/fakeData/navData";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { BsFillMortarboardFill } from "react-icons/bs";
+import { MdOutlineWork } from "react-icons/md";
 import { useContext, useState } from "react";
 import Description from "../components/description";
 import { ThemeModeContext } from "@/context/ThemeMode";
@@ -32,21 +34,28 @@ export default function History() {
       )
     );
 
-    const handleDialogOpen = (index: number) => {
-      setCurr((curr) => curr.map((c, i) => (i === index ? index : c)));
-    };
+  const handleDialogOpen = (index: number) => {
+    setCurr((curr) => curr.map((c, i) => (i === index ? index : c)));
+  };
 
   return (
     <div className="flex flex-wrap gap-[5px] justify-start items-stretch w-full">
       {hitory.map((e, index) => (
         <Dialog key={index}>
-          <DialogTrigger onClick={() => handleDialogOpen(index) }>
+          <DialogTrigger onClick={() => handleDialogOpen(index)}>
             <div className="relative w-[307.67px] h-[307.67px] bg-[#262626]">
-              <Image src={e.images[0]} quality={100} fill style={{ objectFit: "cover" }} alt="album" />
+              <span className="absolute text-xl top-2 right-2 z-50">
+                {e.workOrLesson ?
+                  <MdOutlineWork />
+                  :
+                  <BsFillMortarboardFill />
+                }
+              </span>
+              <Image src={e.images[0]} quality={100} fill style={{ objectFit: "cover", zIndex: 'auto' }} alt="album" />
             </div>
           </DialogTrigger>
 
-          <DialogContent className={`w-[1413px] flex ${isDark? "bg-black" : "bg-white"}`}>
+          <DialogContent className={`w-[1413px] flex ${isDark ? "bg-black" : "bg-white"}`}>
             <div className={`w-[913px] h-[913px] relative bg-[#2525257]`}>
               <Carousel slides={hitory[curr[index]].images} key={index} />
             </div>
