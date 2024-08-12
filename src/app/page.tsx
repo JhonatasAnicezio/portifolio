@@ -3,7 +3,7 @@ export default function Home() {
     <div className="flex px-20 py-5 gap-5 flex-col justify-center items-start w-full font-mono">
       <h2 className="text-4xl">Olá! 👋</h2>
       <p>
-        Eu sou o Jhonatas, um desenvolvedor full-stack de 20 anos vivendo em Batatais, São Paulo. Desde cedo, meu interesse por programação e resolução de problemas tecnológicos me levou a explorar profundamente esse campo empolgante. Além do meu trabalho com código, tenho grande interesse em treinar e cozinhar, sempre buscando novas receitas e técnicas para aprimorar minhas habilidades culinárias. Estou constantemente aprendendo coisas novas e não me deixo intimidar por desafios, o que me permite crescer tanto pessoal quanto profissionalmente.
+        Meu nome é Jhonatas, sou um desenvolvedor full-stack de 20 anos vivendo em Batatais, São Paulo. Desde cedo, meu interesse por programação e resolução de problemas tecnológicos me levou a explorar profundamente esse campo empolgante. Além do meu trabalho com código, tenho grande interesse em treinar 💪🏽 e cozinhar 👨🏽‍🍳, sempre buscando novas receitas e técnicas para aprimorar minhas habilidades culinárias. Estou constantemente aprendendo coisas novas e não me deixo intimidar por desafios, o que me permite crescer tanto pessoal quanto profissionalmente.
       </p>
       <p>
         Atualmente, estou envolvido em um projeto voluntário chamado TableRise, que foi criado para atender aos jogadores de RPG. O TableRise oferece ferramentas práticas e intuitivas para tornar campanhas de RPG mais dinâmicas e divertidas. A plataforma é projetada para ser aconchegante e fácil de usar, ideal para qualquer tipo de campanha, desde as mais simples até as mais complexas.
