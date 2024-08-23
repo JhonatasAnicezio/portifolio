@@ -7,9 +7,10 @@ import capaGrolet from '../../public/IMG_9436-scaled.jpeg';
 import capaTableRise from '../../public/255737992-387aca69-151e-4c18-868e-b9f5e77e1f1d.png';
 import { StaticImageData } from "next/image";
 
-import clare from '../../public/jovens.png';
+import clare from '../../public/Claretiano 02.jpg';
+import clare2 from '../../public/jovens.png';
 
-import etec from '../../public/ETEC-Batatais.jpg';
+import etec from '../../public/etec-batatais.jpg';
 
 import rpg from '../../public/15922742b6ef2adc93919d64efed753f.webp';
 
@@ -107,7 +108,7 @@ export const hitory: {
         }
     },
     {
-        images: [clare],
+        images: [clare, clare2],
         workOrLesson: true,
         date: '',
         description: {
