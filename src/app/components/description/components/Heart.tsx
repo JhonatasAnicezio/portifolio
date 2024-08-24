@@ -8,7 +8,7 @@ export default function Heart({ id }: PropsHeart) {
     const [isLike, setLike] = useState(false);
 
     useEffect(() => {
-        const like = localStorage.getItem(`${id}`);
+        const like = localStorage.getItem(`${id}-heart`);
 
         if(like) {
             setLike(JSON.parse(like))
@@ -20,7 +20,7 @@ export default function Heart({ id }: PropsHeart) {
             id={id}
             onClick={() => {
                 setLike(!isLike)
-                localStorage.setItem(`${id}`, JSON.stringify(!isLike));
+                localStorage.setItem(`${id}-heart`, JSON.stringify(!isLike));
             }}
         >
             {isLike ?
