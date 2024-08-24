@@ -15,13 +15,14 @@ interface DescriptionProps {
         }[];
         details: string[];
         stacks: string[];
+        date: string;
     };
 }
 
 export default function Description({ description }: DescriptionProps) {
     const { isDark } = useContext(ThemeModeContext);
 
-    const { title, links, details, stacks } = description;
+    const { title, links, details, stacks, date } = description;
 
     return (
         <div className={`flex flex-col w-[500px] rounded-tr-sm rounded-br-sm relative ${isDark ? "text-white" : "text-black"}`}>
@@ -61,7 +62,7 @@ export default function Description({ description }: DescriptionProps) {
                             </span>
 
                         <div className={`"flex justify-start text-xs w-full`}>
-                            <p className={isDark? 'text-white/50': 'text-black/50'}>out de 2023 - o momento · 11 meses</p>
+                            <p className={isDark? 'text-white/50': 'text-black/50'}>{ date }</p>
                         </div>
                         </p>
                     </div>

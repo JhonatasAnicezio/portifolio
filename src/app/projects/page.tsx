@@ -1,4 +1,5 @@
 'use client'
+import { HiSquare2Stack } from "react-icons/hi2";
 import Carousel from "@/components/ui/carousel";
 import Image from "next/image";
 
@@ -33,21 +34,25 @@ export default function Projects() {
       )
     );
 
-    const handleDialogOpen = (index: number) => {
-      setCurr((curr) => curr.map((c, i) => (i === index ? index : c)));
-    };
+  const handleDialogOpen = (index: number) => {
+    setCurr((curr) => curr.map((c, i) => (i === index ? index : c)));
+  };
 
   return (
     <div className="flex flex-wrap gap-[5px] justify-start items-stretch w-full">
       {projects.map((e, index) => (
         <Dialog key={index}>
-          <DialogTrigger onClick={() => handleDialogOpen(index) }>
+          <DialogTrigger onClick={() => handleDialogOpen(index)}>
             <div className="relative w-[307.67px] h-[307.67px] bg-[#262626]">
-              <Image src={e.images[0]} quality={100} fill style={{ objectFit: "cover" }} alt="album" />
+              <span className="absolute text-xl top-2 right-2 z-50 text-white">
+                {e.images.length > 1 &&
+                  <HiSquare2Stack />
+                }
+              </span>              <Image src={e.images[0]} quality={100} fill style={{ objectFit: "cover" }} alt="album" />
             </div>
           </DialogTrigger>
 
-          <DialogContent  className={`w-[1413px] flex ${isDark? "bg-black" : "bg-white"}`}>
+          <DialogContent className={`w-[1413px] flex ${isDark ? "bg-black" : "bg-white"}`}>
 
             <div className={`w-[913px] h-[913px] relative bg-[#2525257]`}>
               <Carousel slides={projects[curr[index]].images} key={index} />

@@ -4,13 +4,13 @@ import { MdOutlinePersonPin } from "react-icons/md";
 
 import capaGrolet from '../../public/IMG_9436-scaled.jpeg';
 
-import capaTableRise from '../../public/255737992-387aca69-151e-4c18-868e-b9f5e77e1f1d.png';
+import capaTableRise from '../../public/table-rise.png';
 import { StaticImageData } from "next/image";
 
 import clare from '../../public/Claretiano 02.jpg';
 import clare2 from '../../public/jovens.png';
 
-import etec from '../../public/etec-batatais.jpg';
+import etec from '../../public/etec.png';
 
 import rpg from '../../public/15922742b6ef2adc93919d64efed753f.webp';
 
@@ -32,11 +32,23 @@ export const pages = [
     },
 ]
 
-export const projects = [
+export const projects: {
+    images: StaticImageData[];
+    description: {
+        title: string;
+        links: {
+            href: string;
+            alt: string;
+        }[];
+        details: string[];
+        stacks: string[];
+        date: string;
+    };
+}[] = [
     {
         images: [rpg],
-        date: '',
         description: {
+            date: 'mai de 2024 · o momento',
             title: 'TableRise 🧙‍♂️',
             links: [
                 {
@@ -52,8 +64,8 @@ export const projects = [
     },
     {
         images: [capaGrolet],
-        date: '',
         description: {
+            date: 'dez de 2023 · abr 2024',
             title: 'Grolet Patisserie 👨‍🍳',
             links: [
                 {
@@ -70,7 +82,7 @@ export const projects = [
                 'O site também conta com diversas formas de contato, como um formulário de contato, e-mail e telefone, facilitando a comunicação dos clientes com a patisserie. Isso permite que os visitantes solicitem encomendas personalizadas, tirem dúvidas ou compartilhem feedbacks.',
                 'Em resumo, o projeto do site institucional da Grolet Patisserie proporciona uma experiência online completa, apresentando um hub de receitas para inspirar os visitantes, um cadastro de clientes para manter um relacionamento próximo e diversas opções de contato para uma comunicação eficiente. Tudo isso visando transmitir a excelência e a paixão da Grolet Patisserie em cada interação com seus clientes.'
             ],
-            stacks: ['Next.js', 'Typescript', 'Express', 'Node.js', 'MySQL']
+            stacks: ['Typescript', 'Next.js', 'Node.js', 'Nest', 'PostgreSQL']
         }
     }
 ];
@@ -78,8 +90,8 @@ export const projects = [
 export const hitory: {
     images: StaticImageData[];
     workOrLesson: boolean;
-    date: string;
     description: {
+        date: string;
         title: string;
         links: {
             href: string;
@@ -92,8 +104,8 @@ export const hitory: {
     {
         images: [capaTableRise],
         workOrLesson: true,
-        date: '',
         description: {
+            date: 'mai de 2024 · o momento',
             title: 'TableRise 🧙‍♂️',
             links: [
                 {
@@ -110,8 +122,8 @@ export const hitory: {
     {
         images: [clare, clare2],
         workOrLesson: true,
-        date: '',
         description: {
+            date: 'out de 2023 · o momento',
             title: 'Claretiano - Rede de Educação',
             links: [
                 {
@@ -128,8 +140,8 @@ export const hitory: {
     {
         images: [etec],
         workOrLesson: false,
-        date: '',
         description: {
+            date: 'jan de 2019 · jan de 2020',
             title: 'Desenvolvimento de Sistemas - ETEC',
             links: [
             ],
