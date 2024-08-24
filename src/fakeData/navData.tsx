@@ -49,7 +49,7 @@ export const projects: {
         images: [rpg],
         description: {
             date: 'mai de 2024 · o momento',
-            title: 'TableRise 🧙‍♂️',
+            title: 'TableRise 🧙',
             links: [
                 {
                     href: 'https://github.com/TableRise',
