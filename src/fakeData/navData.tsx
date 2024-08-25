@@ -3,12 +3,17 @@ import { LuHistory } from "react-icons/lu";
 import { MdOutlinePersonPin } from "react-icons/md";
 
 import capaGrolet from '../../public/IMG_9436-scaled.jpeg';
+import g1 from '../../public/g1.webp';
+import g2 from '../../public/g2.webp';
+import g3 from '../../public/g3.webp';
+import g4 from '../../public/g4.webp';
 
 import capaTableRise from '../../public/table-rise.png';
 import { StaticImageData } from "next/image";
 
 import clare from '../../public/Claretiano 02.jpg';
-import clare2 from '../../public/jovens.png';
+import clare2 from '../../public/t5fUTsCg_400x400.png';
+import clare3 from '../../public/jovens.png';
 
 import etec from '../../public/etec.png';
 
@@ -65,7 +70,7 @@ export const projects: {
         }
     },
     {
-        images: [capaGrolet],
+        images: [capaGrolet, g1, g2, g3, g4],
         description: {
             date: 'dez de 2023 · abr 2024',
             title: 'Grolet Patisserie 👨‍🍳',
@@ -142,7 +147,7 @@ export const hitory: {
         }
     },
     {
-        images: [clare, clare2],
+        images: [clare,  clare2, clare3],
         workOrLesson: true,
         description: {
             date: 'out de 2023 · o momento',
