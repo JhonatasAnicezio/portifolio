@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { ThemeModeProvider } from "@/context/ThemeMode";
-import Template from "./template";
+import { Suspense } from "react";
+import LoaderHeader from "./components/ux/LoaderHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,7 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.className}`}>
         <ThemeModeProvider>
+          <Suspense fallback={<LoaderHeader />}>
             {children}
+          </Suspense>
         </ThemeModeProvider>
       </body>
     </html>
