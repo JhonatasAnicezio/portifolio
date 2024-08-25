@@ -15,7 +15,7 @@ export default function Template({
 
     return (
         <>
-            <div className={`flex w-full min-h-screen items-start ${isDark ? 'text-white bg-black' : 'text-black bg-white'}`}>
+            <div className={`flex min-h-screen items-start ${isDark ? 'text-white bg-black' : 'text-black bg-white'}`}>
                 <Darkmode />
 
                 {/* aside */}
@@ -24,7 +24,7 @@ export default function Template({
                 {/* section */}
                 <div className="flex justify-center items-center w-full"> {/* pl-[245px] */}
                     {/* section profile */}
-                    <main className="flex flex-col items-center w-[935px] h-full">
+                    <main className="flex flex-col items-center w-[935px] h-full max-sm:w-full">
 
                         {/* header component profile */}
                         <Header />

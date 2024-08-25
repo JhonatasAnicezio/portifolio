@@ -11,22 +11,22 @@ export default function Header() {
     const { isDark } = useContext(ThemeModeContext);
 
     return (
-        <header className="flex px-[35px] py-[35px]">
+        <header className="flex px-[35px] py-[35px] max-sm:px-0">
 
             {/* image profile */}
-            <div className="flex items-center justify-center px-10">
+            <div className="flex items-center justify-center px-10 max-sm:px-0">
                 <Image
                     className="rounded-full"
                     width={150}
                     height={150}
                     src={profile}
-                    alt="bla"
+                    alt="Imagem do perfil"
                     priority
                 />
             </div>
 
             {/* info profile */}
-            <div className="flex flex-col px-10 pt-1 gap-8 items-start ">
+            <div className="flex flex-col px-10 pt-1 gap-8 items-start">
 
                 {/* header info profile */}
                 <div className="flex gap-2 items-center">
@@ -53,7 +53,8 @@ export default function Header() {
                     <p>👨‍💻 Desenvolvedor FullStack</p>
                     <p>🎓 Engenharia de Software 1 / 8</p>
                     <p>✉️ jhonatasanic@hotmail.com</p>
-                    <p className="">🔥 Next.js / MySQL / Node.js / Java / Spring</p>
+                    {/* <p>💍 Casado - Milena Fernandes Alves da Silva</p> */}
+                    <p>🔥 Next.js / MySQL / Node.js / Java / Spring</p>
                     
                     <p className="pt-2">Meus contatos</p>
                     <p className={`${isDark? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
