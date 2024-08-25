@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profile from '../../../../public/3d40e2ddc5683a93f7987f9a4f5b77f7.jpg';
+import profile from '../../../../public/profile.webp';
 import { MdVerified } from "react-icons/md";
 import { useContext } from "react";
 import { ThemeModeContext } from "@/context/ThemeMode";

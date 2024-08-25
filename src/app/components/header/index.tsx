@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import profile from "../../../../public/3d40e2ddc5683a93f7987f9a4f5b77f7.jpg";
+import profile from "../../../../public/profile.webp";
 import { RiLinkM } from "react-icons/ri";
 import { MdVerified } from "react-icons/md";
 import { useContext } from "react";

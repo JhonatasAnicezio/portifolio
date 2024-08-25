@@ -2,20 +2,20 @@ import { LiaTableSolid } from "react-icons/lia";
 import { LuHistory } from "react-icons/lu";
 import { MdOutlinePersonPin } from "react-icons/md";
 
-import capaGrolet from '../../public/IMG_9436-scaled.jpeg';
+import capaGrolet from '../../public/capagrolet.webp';
 import g1 from '../../public/g1.webp';
 import g2 from '../../public/g2.webp';
 import g3 from '../../public/g3.webp';
 import g4 from '../../public/g4.webp';
 
-import capaTableRise from '../../public/table-rise.png';
+import capaTableRise from '../../public/table-rise.webp';
 import { StaticImageData } from "next/image";
 
-import clare from '../../public/Claretiano 02.jpg';
-import clare2 from '../../public/t5fUTsCg_400x400.png';
-import clare3 from '../../public/jovens.png';
+import clare from '../../public/capaclaret.webp';
+import clare2 from '../../public/claretlogo.webp';
+import clare3 from '../../public/jovens.webp';
 
-import etec from '../../public/etec.png';
+import etec from '../../public/etec.webp';
 
 import rpg from '../../public/15922742b6ef2adc93919d64efed753f.webp';
 
