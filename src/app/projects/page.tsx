@@ -48,7 +48,8 @@ export default function Projects() {
                 {e.images.length > 1 &&
                   <HiSquare2Stack />
                 }
-              </span>              <Image src={e.images[0]} quality={100} fill style={{ objectFit: "cover" }} alt="album" />
+              </span>
+              <Image src={e.images[0]} quality={100} fill style={{ objectFit: "cover" }} alt="album" />
             </div>
           </DialogTrigger>
 
