@@ -51,7 +51,14 @@ export default function History() {
                   <BsFillMortarboardFill />
                 }
               </span>
-              <Image src={e.images[0]} quality={100} fill style={{ objectFit: "cover", zIndex: 'auto' }} alt="album" />
+              <Image
+                fill
+                src={e.images[0]}
+                quality={100}
+                style={{ objectFit: "cover", zIndex: 'auto' }}
+                alt="album"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
           </DialogTrigger>
 

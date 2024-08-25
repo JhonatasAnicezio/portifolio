@@ -30,7 +30,15 @@ export default function Description({ description }: DescriptionProps) {
             <div className={`flex w-full border-b ${isDark ? "border-[#262626]" : "border-[#dbdbdb]"}`}>
                 <header className="flex items-center py-[14px] pl-4 gap-[14px]">
                     <div className="relative w-8 h-8">
-                        <Image src={profile} className="rounded-full" quality={100} fill style={{ objectFit: "cover" }} alt="profile" />
+                        <Image
+                            fill
+                            src={profile}
+                            className="rounded-full"
+                            quality={100}
+                            style={{ objectFit: "cover" }}
+                            alt="profile"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        />
                     </div>
 
                     <div className="flex font-semibold items-center text-sm gap-1">
@@ -51,20 +59,21 @@ export default function Description({ description }: DescriptionProps) {
 
                         <div className="flex flex-col gap-2">
                             {details.map((detail, i) => 
-                            <p key={i}>
-                                {detail}
-                            </p>)}
+                                <p key={i}>
+                                    {detail}
+                                </p>
+                            )}
                         </div>
 
-                        <p className={`flex flex-col gap-1`}>
-                            <span className={`${isDark ? "text-[#e0f1ff]" : "text-[#00376b]"}`}>
+                        <div className={`flex flex-col gap-1`}>
+                            <p className={`${isDark ? "text-[#e0f1ff]" : "text-[#00376b]"}`}>
                                 #{stacks.join('#')}
-                            </span>
+                            </p>
 
-                        <div className={`"flex justify-start text-xs w-full`}>
-                            <p className={isDark? 'text-white/50': 'text-black/50'}>{ date }</p>
+                            <div className={`"flex justify-start text-xs w-full`}>
+                                <p className={isDark? 'text-white/50': 'text-black/50'}>{ date }</p>
+                            </div>
                         </div>
-                        </p>
                     </div>
                 </div>
             </section>

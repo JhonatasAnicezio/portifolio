@@ -15,7 +15,14 @@ export default function Header() {
 
             {/* image profile */}
             <div className="flex items-center justify-center px-10">
-                <Image className="rounded-full" width={150} height={150} src={profile} alt="bla" />
+                <Image
+                    className="rounded-full"
+                    width={150}
+                    height={150}
+                    src={profile}
+                    alt="bla"
+                    priority
+                />
             </div>
 
             {/* info profile */}

@@ -14,6 +14,7 @@ import { useContext, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import Description from "../components/description";
 import { ThemeModeContext } from "@/context/ThemeMode";
+import { DialogDescription, DialogTitle } from "@radix-ui/react-dialog";
 
 export default function Projects() {
   const { isDark } = useContext(ThemeModeContext);
@@ -49,11 +50,28 @@ export default function Projects() {
                   <HiSquare2Stack />
                 }
               </span>
-              <Image src={e.images[0]} quality={100} fill style={{ objectFit: "cover" }} alt="album" />
+              <Image
+                fill
+                priority
+                src={e.images[0]}
+                quality={100}
+                style={{ objectFit: "cover" }}
+                alt="album"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
           </DialogTrigger>
 
           <DialogContent className={`w-[1413px] flex ${isDark ? "bg-black" : "bg-white"}`}>
+            <div className="hidden">
+              <DialogTitle>
+                {projects[curr[index]].description.title}
+              </DialogTitle>
+
+              <DialogDescription>
+                {projects[curr[index]].description.details}
+              </DialogDescription>
+            </div>
 
             <div className={`w-[913px] h-[913px] relative bg-[#2525257]`}>
               <Carousel slides={projects[curr[index]].images} key={index} />

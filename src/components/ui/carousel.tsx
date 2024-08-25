@@ -21,7 +21,12 @@ export default function Carousel({ slides }: CarouselProps) {
             <div className="flex w-full h-full" style={{ transform: `translateX(-${curr*100}%)` }}>
                 {slides.map((slide, i) => (
                     <div key={i} className="w-full h-full flex-shrink-0 relative">
-                        <Image src={slide} alt="album" quality={100} fill style={{ objectFit: "cover" }}/>
+                        <Image
+                            src={slide}
+                            alt="album"
+                            quality={100}
+                            fill style={{ objectFit: "cover" }}
+                        />
                     </div>
                 ))}
             </div>
