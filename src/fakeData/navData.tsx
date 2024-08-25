@@ -14,6 +14,8 @@ import etec from '../../public/etec.png';
 
 import rpg from '../../public/15922742b6ef2adc93919d64efed753f.webp';
 
+import estacio from '../../public/esta.webp';
+
 export const pages = [
     {
         href: '/',
@@ -117,6 +119,26 @@ export const hitory: {
                 'TableRise é um projeto criado com a finalidade de ajudar profissionais juniors que ainda não tiveram sua primeira oportunidade a adquirir experiência com um projeto que têm processos e metódos condizentes com o mercado de trabalho e foi idealizado pensando em jogadores apaixonados por RPG, que desejam uma partida dinâmica e divertida, esse é o objetivo principal do projeto, fornecer ferramentas úteis e fáceis de usar para uma campanha de RPG, já existem outros projetos neste sentido, porem o TableRise é pensado para ser uma plataforma super intuitiva e muito aconchegante para campanhas simples ou até mais elaboradas e mais complexas, se seu objetivo é ter uma experiência incrível com seus amigos jogando RPG, TableRise é com certeza o lugar ideal.',
             ],
             stacks: ['Next.js', 'Typescript', 'Express', 'Node.js', 'MongoDB']
+        }
+    },
+    {
+        images: [estacio],
+        workOrLesson: false,
+        description: {
+            date: 'jan de 2024 · o momento',
+            title: 'Engenharia de Software 👨‍🎓',
+            links: [
+                {
+                    href: 'https://estacio.br/cursos/graduacao/engenharia-de-software?utm_campaign=PMax%7CGraduacao%7CPresencial%7CGoogle(GDN)%7CPerformanceMax%7CNacional_ContaPresencial&gad_source=1&gclid=Cj0KCQjwqdqvBhCPARIsANrmZhNvuiMNO_K1VoX8uA5P1wjwZUESdduA8N1YU4apSl6RY2B3oIyFjMUaAsCTEALw_wcB&gclsrc=aw.ds',
+                    alt: '@estacio/EngenhariaSoftware'
+                },
+            ],
+            details: [
+                'Atualmente, estou cursando Engenharia de Software, um passo fundamental para meu crescimento na área de desenvolvimento de sistemas. O curso tem proporcionado uma base sólida tanto nos princípios teóricos quanto práticos do desenvolvimento de software, abrangendo desde a concepção e design até a implementação e manutenção de sistemas complexos.',
+                'Através do curso, tenho me aprofundado em tópicos essenciais como algoritmos, estruturas de dados, arquitetura de software, bancos de dados, bem como metodologias de desenvolvimento modernas, como Agile e DevOps. Essa formação tem sido crucial para o aprimoramento das minhas habilidades técnicas, além de me proporcionar uma visão mais ampla e estratégica sobre como desenvolver soluções de software escaláveis, seguras e eficientes.',
+                'O conhecimento adquirido está diretamente alinhado com minha atuação profissional, me permitindo aplicar práticas de engenharia de software que garantem qualidade e confiabilidade no desenvolvimento de projetos. Com isso, estou constantemente aprimorando minhas competências e me tornando um profissional mais completo e preparado para os desafios do mercado de tecnologia, onde a inovação e a busca por soluções de alto desempenho são essenciais.'
+            ],
+            stacks: ['bacharelado', 'desenvolvimento', 'manutenção', 'software']
         }
     },
     {
