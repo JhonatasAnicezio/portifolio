@@ -24,7 +24,7 @@ export default function Template({
                 {/* section */}
                 <div className="flex justify-center items-center w-full"> {/* pl-[245px] */}
                     {/* section profile */}
-                    <main className="flex flex-col items-center w-[935px] h-full max-sm:w-full">
+                    <main className="flex flex-col items-start w-[935px] h-full max-sm:w-full">
 
                         {/* header component profile */}
                         <Header />

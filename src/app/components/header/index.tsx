@@ -11,7 +11,7 @@ export default function Header() {
     const { isDark } = useContext(ThemeModeContext);
 
     return (
-        <header className="flex px-[35px] py-[35px] max-sm:px-0">
+        <header className="flex p-[35px] max-sm:px-0">
 
             {/* image profile */}
             <div className="flex items-center justify-center px-10 max-sm:px-0">
@@ -55,7 +55,7 @@ export default function Header() {
                     <p>✉️ jhonatasanic@hotmail.com</p>
                     {/* <p>💍 Casado - Milena Fernandes Alves da Silva</p> */}
                     <p>🔥 Next.js / MySQL / Node.js / Java / Spring</p>
-                    
+
                     <p className="pt-2">Meus contatos</p>
                     <p className={`${isDark? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
                         <Link className="flex items-center gap-1 font-semibold" target="blank" href={'https://github.com/JhonatasAnicezio'}>
