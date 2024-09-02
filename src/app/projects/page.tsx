@@ -40,11 +40,11 @@ export default function Projects() {
   };
 
   return (
-    <div className="flex flex-wrap gap-[5px] justify-start items-stretch w-full">
+    <div className="flex flex-wrap gap-[5px] justify-start items-stretch w-full max-sm:gap-1 max-sm:p-0.5">
       {projects.map((e, index) => (
         <Dialog key={index}>
           <DialogTrigger onClick={() => handleDialogOpen(index)}>
-            <div className="relative w-[307.67px] h-[307.67px] bg-[#262626]">
+            <div className="relative w-[307.67px] h-[307.67px] bg-[#262626] max-sm:w-[122px] max-sm:h-[122px]">
               <span className="absolute text-xl top-2 right-2 z-50 text-white">
                 {e.images.length > 1 &&
                   <HiSquare2Stack />

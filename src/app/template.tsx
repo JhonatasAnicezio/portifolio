@@ -30,7 +30,7 @@ export default function Template({
                         <Header />
 
                         {/* sections profile */}
-                        <section className={`mt-10 w-full border-t ${isDark ? "border-[#262626]" : "border-[#dbdbdb]"}`}>
+                        <section className={`mt-10 max-sm:mt-0 w-full border-t ${isDark ? "border-[#262626]" : "border-[#dbdbdb]"}`}>
                             {/* navigation sections profile */}
                             <Nav pages={pages} />
                             {/* pages sections profile */}
