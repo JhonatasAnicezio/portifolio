@@ -73,7 +73,7 @@ export default function Projects() {
               </DialogDescription>
             </div>
 
-            <div className={`w-[913px] h-[913px] relative bg-[#2525257]`}>
+            <div className={`w-[913px] h-[913px] relative bg-[#2525257] max-sm:w-full max-sm:h-[400px]`}>
               <Carousel slides={projects[curr[index]].images} key={index} />
             </div>
 

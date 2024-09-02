@@ -14,7 +14,7 @@ export default function Header() {
         <header className="flex p-[35px] max-sm:px-0">
 
             {/* image profile */}
-            <div className="flex items-center justify-center px-10 max-sm:hidden min-sm:block border">
+            <div className="flex items-center justify-center px-10 max-sm:hidden min-sm:block">
                 <Image
                     className="rounded-full"
                     width={150}
