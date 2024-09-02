@@ -60,7 +60,7 @@ export default function Header() {
                 </div>
 
                 {/* info profile tag and info */}
-                <div className="flex flex-col text-xs">
+                <div className="flex flex-col text-sm max-sm:text-xs">
                     <h2 className="font-bold">Jhonatas Anicezio</h2>
                     {/* <p>💍 Casado - Milena Fernandes Alves da Silva</p> */}
                     <p>👨‍💻 Desenvolvedor FullStack</p>
