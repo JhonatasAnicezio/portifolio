@@ -43,8 +43,8 @@ export default function Projects() {
     <div className="flex flex-wrap gap-[5px] justify-start items-stretch w-full max-sm:gap-1 max-sm:p-0.5">
       {projects.map((e, index) => (
         <Dialog key={index}>
-          <DialogTrigger onClick={() => handleDialogOpen(index)}>
-            <div className="relative w-[307.67px] h-[307.67px] bg-[#262626] max-sm:w-[122px] max-sm:h-[122px]">
+          <DialogTrigger className="w-[307.67px] h-[307.67px] max-sm:w-[32.5%] max-sm:h-[122px]" onClick={() => handleDialogOpen(index)}>
+            <div className="relative w-full h-full bg-[#262626]">
               <span className="absolute text-xl top-2 right-2 z-50 text-white">
                 {e.images.length > 1 &&
                   <HiSquare2Stack />
