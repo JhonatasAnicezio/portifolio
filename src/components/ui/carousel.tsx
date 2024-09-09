@@ -22,6 +22,7 @@ export default function Carousel({ slides }: CarouselProps) {
                 {slides.map((slide, i) => (
                     <div key={i} className="w-full h-full flex-shrink-0 relative">
                         <Image
+                            priority
                             src={slide}
                             alt="album"
                             quality={100}

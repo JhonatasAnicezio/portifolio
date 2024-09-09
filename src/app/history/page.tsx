@@ -52,6 +52,7 @@ export default function History() {
                 }
               </span>
               <Image
+                priority
                 fill
                 src={e.images[0]}
                 quality={100}
