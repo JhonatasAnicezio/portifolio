@@ -9,7 +9,7 @@ export default function Home() {
         Além de escrever código, eu também adoro treinar 💪🏽 e cozinhar 👨🏽‍🍳! Estou sempre testando novas receitas e técnicas, buscando me aperfeiçoar em tudo que faço.
       </p>
       <p>
-        🎯 Atualmente, estou engajado em um projeto voluntário super legal chamado TableRise. O objetivo? Ajudar jogadores de RPG a deixarem suas campanhas mais dinâmicas e divertidas, oferecendo ferramentas intuitivas e práticas.
+        🎯 Atualmente, estou engajado em um projeto voluntário chamado TableRise. O objetivo? Ajudar jogadores de RPG a deixarem suas campanhas mais dinâmicas e divertidas, oferecendo ferramentas intuitivas e práticas.
       </p>
       <p>
         No meu trabalho atual, atuo no setor de infraestrutura 🏗️, onde tenho a oportunidade de entender a fundo as necessidades tecnológicas de uma empresa. E para completar, estou cursando Engenharia de Software 🎓, o que tem sido incrível para expandir ainda mais meus conhecimentos.
