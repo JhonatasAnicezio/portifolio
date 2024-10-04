@@ -1,6 +1,6 @@
 import Description from "@/components/description";
 import Carousel from "@/components/ui/carousel";
-import { db } from "@/data/firebase-config";
+import { db } from "@/data/firebase-data";
 import Project from "@/types/project-type";
 import { collection, doc, getDoc, getDocs } from "firebase/firestore";
 import { ChevronLeft, ChevronRight } from "lucide-react";

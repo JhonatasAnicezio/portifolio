@@ -1,4 +1,4 @@
-import { db } from "@/data/firebase-config";
+import { db } from "@/data/firebase-data";
 import Project from "@/types/project-type";
 import { collection, getDocs } from "firebase/firestore";
 import Image from "next/image";

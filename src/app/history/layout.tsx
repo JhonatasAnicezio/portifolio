@@ -1,4 +1,4 @@
-import { db } from "@/data/firebase-config";
+import { db } from "@/data/firebase-data";
 import History from "@/types/history-type";
 import { collection, getDocs } from "firebase/firestore";
 import Image from "next/image";
