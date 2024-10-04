@@ -26,7 +26,7 @@ export default async function Layout({
             <div className="flex flex-wrap gap-[5px] justify-start items-stretch w-full max-sm:gap-1 max-sm:p-0.5">
                 {projects.map(async (e, index) => {
                     return (
-                        <Link href={`/projects/${e.id}`} className="w-[307.67px] h-[307.67px] max-sm:w-[32.5%] max-sm:h-[122px]">
+                        <Link key={index} href={`/projects/${e.id}`} className="w-[307.67px] h-[307.67px] max-sm:w-[32.5%] max-sm:h-[122px]">
                             <div className="relative w-full h-full bg-[#262626]">
                                 <Image
                                     fill
