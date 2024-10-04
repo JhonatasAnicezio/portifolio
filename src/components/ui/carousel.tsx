@@ -1,10 +1,10 @@
 'use client'
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 import { useState } from "react";
 
 type CarouselProps = {
-    slides: StaticImageData[];
+    slides: string[];
 };
 
 export default function Carousel({ slides }: CarouselProps) {
