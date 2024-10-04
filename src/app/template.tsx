@@ -2,8 +2,8 @@
 import Darkmode from "@/components/ui/darkmode";
 import { ThemeModeContext } from "@/context/ThemeMode";
 import { useContext } from "react";
-import Header from "./components/header";
-import Nav from "./components/Nav";
+import Header from "@/components/header";
+import Nav from "@/components/Nav";
 import { pages } from "@/fakeData/navData";
 
 export default function Template({

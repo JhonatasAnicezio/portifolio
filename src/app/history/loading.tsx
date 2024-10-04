@@ -1,5 +1,5 @@
-import Loader from "../components/ux/Loader";
-import LoaderHeader from "../components/ux/LoaderHeader";
+import Loader from "../../components/ux/Loader";
+import LoaderHeader from "../../components/ux/LoaderHeader";
 
 export default function Loading() {
     return (
