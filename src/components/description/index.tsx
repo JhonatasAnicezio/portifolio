@@ -27,7 +27,7 @@ export default function Description({ description }: DescriptionProps) {
     const { title, links, details, stacks, date } = description;
 
     return (
-        <div className={`flex flex-col w-[500px] rounded-tr-sm rounded-br-sm relative ${isDark ? "text-white" : "text-black"}`}>
+        <div className={`flex flex-col w-[500px] rounded-tr-sm rounded-br-sm relative ${isDark ? "text-white bg-black" : "text-black bg-white"}`}>
             <div className={`flex w-full border-b ${isDark ? "border-[#262626]" : "border-[#dbdbdb]"}`}>
                 <header className="flex items-center py-[14px] pl-4 gap-[14px]">
                     <div className="relative w-8 h-8">

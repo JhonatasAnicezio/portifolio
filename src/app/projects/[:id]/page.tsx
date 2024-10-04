@@ -50,7 +50,7 @@ export default async function Posts({ params }: PostPageProps) {
         <div className="flex h-screen w-full items-center justify-center fixed left-0 top-0">
             <Link className="absolute h-screen w-full z-10 bg-black opacity-50 cursor-default" href={'/projects'} />
 
-            <div className="w-[1413px] h-[913px] flex z-30 bg-black relative">
+            <div className="w-[1413px] h-[913px] flex z-30 relative">
 
                 <div className="w-[913px] h-[913px] relative bg-[#252525] max-sm:w-full max-sm:h-[400px] z-30">
                     <Carousel slides={project.images} />
