@@ -12,11 +12,11 @@ export default function Loading() {
 
     return (
         <div className="flex h-screen w-full items-center justify-center fixed left-0 top-0">
-            <Link className="absolute h-screen w-full z-10 bg-black opacity-50 cursor-default" href={'/projects'} />
+            <Link className="absolute h-screen w-full bg-black opacity-50 cursor-default" href={'/projects'} />
 
-            <div className="w-[1413px] h-[913px] flex z-30 relative">
+            <div className="w-[1413px] h-[913px] flex relative">
 
-                <div className="w-[913px] h-[913px] relative bg-[#a8a8a8] max-sm:w-full max-sm:h-[400px] z-30" />
+                <div className="w-[913px] h-[913px] relative bg-[#a8a8a8] max-sm:w-full max-sm:h-[400px]" />
 
                 <div className={`flex flex-col w-[500px] rounded-tr-sm rounded-br-sm relative ${isDark ? "text-white bg-black" : "text-black bg-white"}`}>
                     <div className={`flex w-full border-b ${isDark ? "border-[#262626]" : "border-[#dbdbdb]"}`}>

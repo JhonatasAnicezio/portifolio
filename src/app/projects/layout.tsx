@@ -1,6 +1,7 @@
 import { db } from "@/data/firebase-data";
 import Project from "@/types/project-type";
 import { collection, getDocs } from "firebase/firestore";
+import { HiSquare2Stack } from "react-icons/hi2";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -37,6 +38,11 @@ export default async function Layout({
                                     alt="album"
                                     sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                                 />
+                                <span className="absolute text-xl top-2 right-2 text-white">
+                                    {projects[index].images.length > 1 &&
+                                        <HiSquare2Stack />
+                                    }
+                                </span>
                             </div>
                         </Link>
                     )
