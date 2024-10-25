@@ -5,6 +5,8 @@ import { HiSquare2Stack } from "react-icons/hi2";
 import Image from "next/image";
 import Link from "next/link";
 
+export const revalidate = 0; 
+
 export default async function Layout({
     children,
 }: Readonly<{
