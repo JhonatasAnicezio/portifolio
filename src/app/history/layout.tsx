@@ -1,6 +1,6 @@
 import { db } from "@/data/firebase-data";
 import History from "@/types/history-type";
-import { collection, getDocs } from "firebase/firestore";
+import { collection, getDocs, orderBy, query } from "firebase/firestore";
 import Image from "next/image";
 import Link from "next/link";
 import { BsFillMortarboardFill } from "react-icons/bs";
@@ -13,7 +13,12 @@ export default async function Layout({
 }>) {
     const collectionRef = collection(db, 'history');
 
-    const projects = (await getDocs(collectionRef))
+    const projectQuery = query(
+        collectionRef,
+        orderBy('index', 'desc')
+    );
+
+    const projects = (await getDocs(projectQuery))
         .docs.map(doc => ({
             ...doc.data(),
             id: doc.id,
