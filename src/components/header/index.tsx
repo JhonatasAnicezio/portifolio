@@ -66,7 +66,7 @@ export default function Header() {
                     <p>👨‍💻 Desenvolvedor FullStack</p>
                     <p>🎓 Engenharia de Software 1 / 8</p>
                     <p>✉️ jhonatasanic@hotmail.com</p>
-                    <p>🔥 Next.js / MySQL / Node.js / Java / Spring</p>
+                    <p>🔥 Next.js / SQL & noSQL / Node.js / Java / Spring</p>
 
                     <p className="pt-2">Meus contatos</p>
                     <p className={`${isDark ? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
