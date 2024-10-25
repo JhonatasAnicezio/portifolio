@@ -6,6 +6,8 @@ import Link from "next/link";
 import { BsFillMortarboardFill } from "react-icons/bs";
 import { MdOutlineWork } from "react-icons/md";
 
+export const revalidate = 0; 
+
 export default async function Layout({
     children,
 }: Readonly<{
