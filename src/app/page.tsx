@@ -3,7 +3,7 @@ export default function Home() {
     <div className="flex px-20 py-5 gap-5 flex-col justify-center items-start w-full text-sm font-mono max-sm:px-4 max-sm:text-xs max-sm:gap-2">
       <h2 className="text-4xl max-sm:text-xl">Olá! 👋</h2>
       <p>
-        👨🏽‍💻 Meu nome é Jhonatas, sou um desenvolvedor full-stack de 20 anos, morando em Batatais, São Paulo. Desde cedo, me apaixonei por programação e adoro enfrentar desafios tecnológicos. 😎
+        👨🏽‍💻 Meu nome é Jhonatas, sou um desenvolvedor full-stack de 21 anos, morando em Batatais, São Paulo. Desde cedo, me apaixonei por programação e adoro enfrentar desafios tecnológicos. 😎
       </p>
       <p>
         Além de escrever código, eu também adoro treinar 💪🏽 e cozinhar 👨🏽‍🍳! Estou sempre testando novas receitas e técnicas, buscando me aperfeiçoar em tudo que faço.

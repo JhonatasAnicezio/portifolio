@@ -64,9 +64,9 @@ export default function Header() {
                     <h2 className="font-bold">Jhonatas Anicezio</h2>
                     {/* <p>💍 Casado - Milena Fernandes Alves da Silva</p> */}
                     <p>👨‍💻 Desenvolvedor FullStack</p>
-                    <p>🎓 Engenharia de Software 1 / 8</p>
+                    <p>🎓 Engenharia de Software 2 / 8</p>
                     <p>✉️ jhonatasanic@hotmail.com</p>
-                    <p>🔥 Next.js / SQL & noSQL / Node.js / Java / Spring</p>
+                    <p>🔥 Next.js / Java / Node.js / SQL & noSQL / Spring</p>
 
                     <p className="pt-2">Meus contatos</p>
                     <p className={`${isDark ? "text-[#C3F1FF]" : "text-[#00376b]"}`}>

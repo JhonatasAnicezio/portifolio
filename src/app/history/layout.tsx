@@ -15,25 +15,25 @@ export default async function Layout({
 }>) {
     const collectionRef = collection(db, 'history');
 
-    const projectQuery = query(
+    const historyQuery = query(
         collectionRef,
         orderBy('index', 'desc')
     );
 
-    const projects = (await getDocs(projectQuery))
+    const history = (await getDocs(historyQuery))
         .docs.map(doc => ({
             ...doc.data(),
             id: doc.id,
         })) as History[] | null;;
 
-    if (!projects) {
+    if (!history) {
         return null;
     }
 
     return (
         <>
             <div className="flex flex-wrap gap-[5px] justify-start items-stretch w-full max-sm:gap-1 max-sm:p-0.5">
-                {projects.map(async (e, index) => {
+                {history.map(async (e, index) => {
                     return (
                         <Link key={index} href={`/history/${e.id}`} className="w-[307.67px] h-[307.67px] max-sm:w-[32.5%] max-sm:h-[122px]">
                             <div className="relative w-full h-full bg-[#262626]">
