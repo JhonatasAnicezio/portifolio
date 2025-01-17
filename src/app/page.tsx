@@ -15,7 +15,7 @@ export default function Home() {
         No meu trabalho atual, atuo no setor de infraestrutura 🏗️, onde tenho a oportunidade de entender a fundo as necessidades tecnológicas de uma empresa. E para completar, estou cursando Engenharia de Software 🎓, o que tem sido incrível para expandir ainda mais meus conhecimentos.
       </p>
       <p>
-        🎨 Sou conhecido pela minha criatividade e por estar sempre aberto a novos projetos. Encaro cada desafio como uma oportunidade de crescer e aprender. Para mim, a programação é uma ferramenta poderosa para transformar ideias em realidade e adoro compartilhar esse entusiasmo com outros
+        🎨 Sou conhecido pela minha criatividade e por estar sempre aberto a novos projetos. Encaro cada desafio como uma oportunidade de crescer e aprender. Para mim, a programação é uma ferramenta poderosa para transformar ideias em realidade e adoro compartilhar esse entusiasmo com outros.
       </p>
     </div>
   );
