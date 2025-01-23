@@ -47,7 +47,7 @@ export default function Header() {
                         </h1>
 
                         <Link
-                            href="./CurriculoJhonatas.pdf"
+                            href="./CurriculoJhonata.pdf"
                             target="blank"
                             className="text-sm rounded-lg font-bold px-5 py-[5px] text-white bg-[#0095F6]"
                         >
