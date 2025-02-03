@@ -12,7 +12,7 @@ export default function Home() {
         🎯 Atualmente, estou engajado em um projeto voluntário chamado TableRise. O objetivo? Ajudar jogadores de RPG a deixarem suas campanhas mais dinâmicas e divertidas, oferecendo ferramentas intuitivas e práticas.
       </p>
       <p>
-        No meu trabalho atual, atuo no setor de infraestrutura 🏗️, onde tenho a oportunidade de entender a fundo as necessidades tecnológicas de uma empresa. E para completar, estou cursando Engenharia de Software 🎓, o que tem sido incrível para expandir ainda mais meus conhecimentos.
+        No meu último trabalho, atuei com infraestrutura de redes 🏗️, adquirindo uma compreensão aprofundada das necessidades tecnológicas de uma empresa. Atualmente, estou cursando Engenharia de Software 🎓, ampliando ainda mais meus conhecimentos na área
       </p>
       <p>
         🎨 Sou conhecido pela minha criatividade e por estar sempre aberto a novos projetos. Encaro cada desafio como uma oportunidade de crescer e aprender. Para mim, a programação é uma ferramenta poderosa para transformar ideias em realidade e adoro compartilhar esse entusiasmo com outros.
