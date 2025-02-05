@@ -5,9 +5,6 @@ export default function Home() {
       <p>
         👨🏽‍💻 Meu nome é Jhonatas, sou um desenvolvedor full-stack de 21 anos, morando em Batatais, São Paulo. Desde cedo, me apaixonei por programação e adoro enfrentar desafios tecnológicos. 😎
       </p>
-      {/* <p>
-        Além de escrever código, eu também adoro treinar 💪🏽 e cozinhar 👨🏽‍🍳! Estou sempre testando novas receitas e técnicas, buscando me aperfeiçoar em tudo que faço.
-      </p> */}
       <p>
         🎯 Atualmente, estou engajado em um projeto voluntário chamado TableRise. O objetivo? Ajudar jogadores de RPG a deixarem suas campanhas mais dinâmicas e divertidas, oferecendo ferramentas intuitivas e práticas.
       </p>
