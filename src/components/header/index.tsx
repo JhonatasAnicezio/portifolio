@@ -63,10 +63,10 @@ export default function Header() {
                 <div className="flex flex-col text-sm max-sm:text-xs">
                     <h2 className="font-bold">Jhonatas Anicezio</h2>
                     {/* <p>💍 Casado - Milena Fernandes Alves da Silva</p> */}
-                    <p>👨‍💻 Desenvolvedor FullStack</p>
+                    <p>👨‍💻 Desenvolvedor Backend</p>
                     <p>🎓 Análise e Desenvolvimento de Sistemas 2 / 5</p>
                     <p>✉️ jhonatasanic@hotmail.com</p>
-                    <p>🔥 Next.js / Java / Node.js / SQL & noSQL / Spring</p>
+                    <p>🔥 Java / SpringBoot / SQL & noSQL / AI / VectorDB / Node / React</p>
 
                     <p className="pt-2">Meus contatos</p>
                     <p className={`${isDark ? "text-[#C3F1FF]" : "text-[#00376b]"}`}>
